@@ -13,17 +13,17 @@ async def on_message(message):
     if "osu" in message.content.lower().replace(' ', ''):
         osu1 = discord.utils.get(message.server.emojis, name = 'osu')
         if message.author != bot.user:
-            await bot.send_message(message.channel, '<:osu:386018419276775434>') 
+            await bot.send_message(message.channel, '<:osu:386018419276775434>')
         await bot.add_reaction(message, osu1)
 
     if 'junwoo' in message.content.lower().replace(' ', ''):
         junwoo = discord.utils.get(message.server.emojis, name = 'junwoo')
         if message.author != bot.user:
-            await bot.send_file(message.channel, 'C:\\Users\\chick\\Desktop\\CS shit\\python\\easy_bot_backup\\junwoo.png')
+            await bot.send_file(message.channel, 'junwoo.png')
         await bot.add_reaction(message, junwoo)
 
     if '@everyone' in message.content.lower():
-        await bot.send_file(message.channel, 'C:\\Users\\chick\\Desktop\\CS shit\\python\\easy_bot\\everyone.jpg')
+        await bot.send_file(message.channel, 'everyone.jpg')
 
     await bot.process_commands(message)
 

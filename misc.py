@@ -21,7 +21,7 @@ class Misc():
 
     @commands.command(pass_context=True)
     async def ssn(self, ctx):
-        await self.bot.say('<@%s> 452-98-6521' % (92360169446473728))
+        await self.bot.say('<@%s> -redacted-' % (92360169446473728))
 
 def setup(bot):
     bot.add_cog(Misc(bot))

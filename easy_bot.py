@@ -6,18 +6,24 @@ from discord.ext import commands
 client = discord.Client()
 bot = Bot(command_prefix="$", description = 'Richard\'s shitty bot')
 
-startup_extensions = ['rng', 'roles', 'misc', 'weather', 'dota']
+startup_extensions = ['rng', 'roles', 'misc', 'weather', 'dota', 'maps']
 
 @bot.event
 async def on_message(message):
-    if "osu" in message.content.lower():
+    if "osu" in message.content.lower().replace(' ', ''):
         osu1 = discord.utils.get(message.server.emojis, name = 'osu')
         if message.author != bot.user:
             await bot.send_message(message.channel, '<:osu:386018419276775434>') 
         await bot.add_reaction(message, osu1)
 
+    if 'junwoo' in message.content.lower().replace(' ', ''):
+        junwoo = discord.utils.get(message.server.emojis, name = 'junwoo')
+        if message.author != bot.user:
+            await bot.send_file(message.channel, 'C:\\Users\\chick\\Desktop\\CS shit\\python\\easy_bot_backup\\junwoo.png')
+        await bot.add_reaction(message, junwoo)
+
     if '@everyone' in message.content.lower():
-        await testbot.send_file(message.channel, 'C:\\Users\\chick\\Desktop\\CS shit\\python\\easy_bot\\everyone.jpg')
+        await bot.send_file(message.channel, 'C:\\Users\\chick\\Desktop\\CS shit\\python\\easy_bot\\everyone.jpg')
 
     await bot.process_commands(message)
 
@@ -36,4 +42,4 @@ if __name__ == '__main__':
             print('Failed to load extension ' + extension + '.', file=sys.stderr)
             traceback.print_exc()
 
-    bot.run('TOKEN', bot=True, reconnect=True)
+    bot.run('MzkyMTQxODM3MDUxMTAxMTg2.DRjAjQ.dZYXEHk5UbX1AOpUIMkwiPbVRAs', bot=True, reconnect=True)

@@ -1,3 +1,6 @@
+#This .awk script was used to parse the massive city JSON database to retrieve a python dictionary of each city name 
+#and its corresponding city ID number so that it could be used with the API.
+
 #!/usr/bin/awk -f
 BEGIN {
 	print "{"

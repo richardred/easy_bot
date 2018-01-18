@@ -1,12 +1,9 @@
 # easy_bot
 
-This discord bot began as a joke, but eventually snowballed into the larger project that it is now.
-It does basic things like sending emojis, reacting with emojis, and supports role-dependent commands, and also has more advanced
-functionalities, such as displaying information about a user's most recent DotA 2 match and giving a brief weather forecast of 
-a given city.
-
-The .awk script was used to parse the massive city JSON database to retrieve a python dictionary of each city name and its
-corresponding ID.
+This Discord bot began as a joke, but eventually snowballed into the larger project that it is now.
+It creates a friendly, interactive chat experience for a Discord server's users by doing basic things like sending and reacting
+with emojis, supports role-dependent commands, and also has more advanced functionalities, such as displaying information 
+about a user's most recent DotA 2 match and giving a brief weather forecast of a given city.
 
 ## How to Use
 

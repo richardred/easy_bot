@@ -42,4 +42,4 @@ if __name__ == '__main__':
             print('Failed to load extension ' + extension + '.', file=sys.stderr)
             traceback.print_exc()
 
-    bot.run('MzkyMTQxODM3MDUxMTAxMTg2.DRjAjQ.dZYXEHk5UbX1AOpUIMkwiPbVRAs', bot=True, reconnect=True)
+    bot.run('TOKEN', bot=True, reconnect=True)

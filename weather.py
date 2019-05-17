@@ -8,7 +8,7 @@ class Weather():
 
     @commands.command(pass_context=True)
     async def weather(self, ctx, *args):
-        api_key = 'c4b001837c47e248823292e4ec37982a'
+        api_key = API_KEY
         cityID = ''
 
         """Retrieve city ID from dictionary"""
